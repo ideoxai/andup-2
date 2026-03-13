@@ -5,8 +5,8 @@ st.title("🤖 Mi Asistente IA")
 
 # Conectamos con la llave secreta
 if "GEMINI_API_KEY" in st.secrets:
-    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    genai.configure(api_key=st.secrets["AIzaSyBbXVIXZOGtyrWWhFNj_25CuASghcb3NMc"])
+    model = genai.GenerativeModel('models/gemini-1.5-flash')
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
